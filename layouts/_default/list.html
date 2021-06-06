@@ -1,4 +1,6 @@
 {{ define "main" }}
+<h1>Blog</h1>
+{{- partial "blog_description.html" . -}}
 <content>
   {{ if .Data.Singular }}
   <h3 style="margin-bottom:0">Filtering for "{{ .Title }}"</h3>
