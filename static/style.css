@@ -72,6 +72,7 @@ img {
 code {
     padding: 2px 5px;
     background-color: var(--bg-lighter);
+    border-radius: 5px;
 }
 
 pre code {
