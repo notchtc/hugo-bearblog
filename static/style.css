@@ -16,7 +16,7 @@
         --fg-darker:    #2f3640;
         --link:         #273c75;
         --link-visited: #192a56;
-        --error:        #e84118;
+        --error:        #c23616;
     }
 }
 
@@ -116,7 +116,7 @@ footer {
 }
 
 .errorlist {
-    color: #e84118;
+    color: var(--error);
     font-size: small;
 }
 
