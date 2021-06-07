@@ -15,7 +15,7 @@ description = "An optional description for SEO. If not provided, an automaticall
 
 = {{ replace .Name "-" " " | title }}
 :toc: macro
-:toc-title!:
+:toc-title: Hello there!
 
 Preamble
 

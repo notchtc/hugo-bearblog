@@ -9,7 +9,7 @@ tags = [{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $
 
 = {{ replace .Name "-" " " | title }}
 :toc: macro
-:toc-title!:
+:toc-title: Hello there!
 
 Preamble
 
