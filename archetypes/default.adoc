@@ -14,7 +14,6 @@ description = "An optional description for SEO. If not provided, an automaticall
 +++
 
 = {{ replace .Name "-" " " | title }}
-{{ .Site.Author.name}} {{ with .Site.Author.email}}<{{ . }}>{{ end }}
 :toc: macro
 :toc-title!:
 

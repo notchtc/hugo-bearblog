@@ -8,7 +8,6 @@ tags = [{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $
 +++
 
 = {{ replace .Name "-" " " | title }}
-{{ .Site.Author.name}} {{ with .Site.Author.email}}<{{ . }}>{{ end }}
 :toc: macro
 :toc-title!:
 
