@@ -1,19 +1,19 @@
 {{ define "main" }}
 {{ if eq .Type "blog" }}{{ if not .Params.menu }}
 <p>
-  <i>
+<i>
     <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-      {{ .Date.Format (default "January 2, 2006" .Site.Params.dateFormat) }}
+        {{ .Date.Format (default "January 2, 2006" .Site.Params.dateFormat) }}
     </time>
-  </i>
+</i>
 </p>
 {{ end }}{{ end }}
 <content>
-  {{ .Content }}
+    {{ .Content }}
 </content>
 <p>
-  {{ range (.GetTerms "tags") }}
-  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
-  {{ end }}
+{{ range (.GetTerms "tags") }}
+<a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+{{ end }}
 </p>
 {{ end }}
